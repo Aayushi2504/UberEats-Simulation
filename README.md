@@ -1,11 +1,11 @@
-# UberEats Simulation Project 🍔🚀
+# UberEats Simulation Project 
 
 A full-stack **food delivery prototype** inspired by UberEats, built as part of coursework at San José State University.
 This project demonstrates end-to-end development with **ReactJS, Node.js/Express, and MySQL**.
 
 ---
 
-## 🛠️ Tech Stack
+## Tech Stack
 **Frontend:** React, Axios, Context API, CSS3  
 **Backend:** Node.js, Express.js, Express-Session, Bcrypt  
 **Database:** MySQL  
@@ -13,14 +13,14 @@ This project demonstrates end-to-end development with **ReactJS, Node.js/Express
 
 ---
 
-## ⚙️ System Architecture
+## System Architecture
 *(Note: Add your 'System_Architecture.png' image to a `/docs` folder)*
 
 ---
 
-## 🚀 Features
+## Features
 
-### 👤 Customer Features
+### Customer Features
 - User authentication (Signup/Login) with secure session management
 - Browse restaurants and menu items
 - Add items to cart and place orders
@@ -28,14 +28,14 @@ This project demonstrates end-to-end development with **ReactJS, Node.js/Express
 - View order history and track order status
 - Update user profile and profile picture
 
-### 🏪 Restaurant Features
+### Restaurant Features
 - Restaurant authentication and registration
 - Manage restaurant profile (details, hours, contact info)
 - Full CRUD operations for menu items (Create, Read, Update, Delete)
 - View and manage incoming orders
 - Update order status (New → Preparing → Delivered/Cancelled)
 
-### ⚡ Backend Features
+### Backend Features
 - RESTful API design with proper HTTP status codes
 - Session-based authentication & authorization
 - Optimized database queries with indexing
@@ -43,7 +43,7 @@ This project demonstrates end-to-end development with **ReactJS, Node.js/Express
 
 ---
 
-## 📸 Screenshots
+## Screenshots
 *(Note: Add your screenshots to a `/screenshots` folder)*
 
 | Landing Page | Customer Home | Cart | Restaurant Dashboard |
@@ -52,7 +52,7 @@ This project demonstrates end-to-end development with **ReactJS, Node.js/Express
 
 ---
 
-## 🚦 Getting Started
+## Getting Started
 
 ### Prerequisites
 - Node.js (v14 or higher)
@@ -88,7 +88,7 @@ This project demonstrates end-to-end development with **ReactJS, Node.js/Express
 
 ---
 
-## 🔗 API Endpoints
+## API Endpoints
 
 | Method | Endpoint | Description |
 |--------|----------|-------------|
@@ -104,7 +104,7 @@ This project demonstrates end-to-end development with **ReactJS, Node.js/Express
 
 ---
 
-## 📈 Results & Learnings
+## Results & Learnings
 - Successfully implemented secure session-based authentication for multiple user types
 - Built a responsive frontend that works seamlessly across mobile and desktop devices
 - Optimized database performance through query indexing and efficient schema design
@@ -118,11 +118,11 @@ This project demonstrates end-to-end development with **ReactJS, Node.js/Express
 
 ---
 
-## 👩‍💻 Author
+## Author
 **Aayushi Shah**  
 [![GitHub](https://img.shields.io/badge/GitHub-Aayushi2504-blue?style=flat&logo=github)](https://github.com/Aayushi2504)
 
 ---
 
-## ⚠️ Disclaimer
+## Disclaimer
 This is an **academic prototype** developed for educational purposes as part of the DATA-236 Distributed Systems course at San José State University. It is not affiliated with or endorsed by Uber Technologies Inc.
