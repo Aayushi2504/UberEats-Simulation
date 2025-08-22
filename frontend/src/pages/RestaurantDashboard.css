@@ -1,0 +1,212 @@
+/* Overall dashboard */
+.restaurant-dashboard-container {
+    padding: 20px;
+    max-width: 1200px;
+    margin: auto;
+    background: #f9f9f9;
+    font-family: 'Arial', sans-serif;
+  }
+  
+  /* Orders & Dishes Section */
+  .orders-section,
+  .dishes-section,
+  .restaurant-info-section {
+    margin-bottom: 40px;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Orders & Dishes Grid */
+  .orders-grid,
+  .dishes-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+  }
+  
+  /* Dish Card */
+  .dish-card {
+    background: white;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease-in-out;
+  }
+  
+  .dish-card:hover {
+    transform: translateY(-5px);
+  }
+  
+  /* Dish Image */
+  .dish-card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 10px;
+  }
+  
+  /* Dishes Section Header */
+  .dishes-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  /* Buttons */
+  .add-dish-button,
+  button {
+    background-color: #ff6600;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background 0.2s ease-in-out;
+  }
+  
+  .add-dish-button:hover,
+  button:hover {
+    background-color: #cc5500;
+  }
+  
+  /* Edit & Delete Buttons inside Dish Card */
+  .dish-buttons {
+    display: flex;
+    gap: 10px; /* Ensures space between buttons */
+  }
+  
+  /* Dropdown for order status */
+  select {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    font-size: 14px;
+  }
+  
+  /* Order Cards */
+  .order-card {
+    background: white;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease-in-out;
+  }
+  
+  .order-card:hover {
+    transform: translateY(-5px);
+  }
+  
+  .order-card h3 {
+    margin-bottom: 10px;
+  }
+  
+  .order-card p {
+    margin: 5px 0;
+  }
+  
+  .order-card select {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    font-size: 14px;
+    margin-top: 10px;
+  }
+  
+  /* Filter and customer modal styles */
+  .orders-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .status-filter {
+    padding: 8px 12px;
+    border-radius: 4px;
+    border: 1px solid #ddd;
+    font-size: 14px;
+    width: auto; /* Adjust width to fit content */
+    max-width: 200px; /* Limit maximum width */
+  }
+  
+  .view-customer-btn {
+    background: #ff6600;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 10px;
+    font-size: 14px;
+    width: 100%; /* Make button full width */
+  }
+  
+  .view-customer-btn:hover {
+    background: #cc5500;
+  }
+  
+  .customer-modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7); /* Darker overlay */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1050; /* Make sure it's above everything */
+}
+
+.modal-content {
+    background: #fff !important;
+    padding: 15px; /* Reduce padding */
+    border-radius: 8px;
+    width: 120px; /* Reduce width */
+    max-width: 60%; /* Keep responsiveness */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border: 2px solid #ddd;
+    z-index: 1051;
+    position: relative;
+}
+
+.modal-content h3, 
+.modal-content p {
+    color: #000; /* Ensure text is visible */
+}
+
+.modal-content button {
+    background: #ff6600;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 10px;
+    font-size: 14px;
+    display: block;
+    width: 100%;
+}
+
+.modal-content button:hover {
+    background: #cc5500;
+}
+
+  
+  /* Adjust order card layout */
+  .order-card {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .order-card select {
+    margin-bottom: 10px;
+  }

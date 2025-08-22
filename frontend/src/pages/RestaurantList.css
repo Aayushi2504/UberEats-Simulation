@@ -1,0 +1,122 @@
+.restaurant-list-page {
+    padding: 20px; /* Add padding around the entire page */
+  }
+  
+  .restaurants-section, .food-section {
+    margin-bottom: 40px; /* Add spacing between sections */
+  }
+  
+  .restaurants-section h2, .food-section h2 {
+    margin-bottom: 20px; /* Add spacing below headings */
+    font-size: 24px;
+    color: #2E3333;
+  }
+  
+  .restaurant-cards-vertical, .dish-cards-vertical {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px; /* Add spacing between cards */
+  }
+  
+  .restaurant-card-vertical, .dish-card-vertical {
+    width: 100%;
+    max-width: 300px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    background-color: white;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    position: relative;
+  }
+  
+  .restaurant-card-vertical:hover, .dish-card-vertical:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  .restaurant-image, .dish-image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+  }
+  
+  .restaurant-details, .dish-details {
+    padding: 16px; /* Add padding inside the card */
+    text-align: left;
+  }
+  
+  .restaurant-details h3, .dish-details h3 {
+    margin: 0;
+    font-size: 18px;
+    color: #2E3333;
+  }
+  
+  .restaurant-details p, .dish-details p {
+    margin: 4px 0;
+    font-size: 14px;
+    color: #666;
+  }
+  
+  .cuisine-type, .description {
+    font-style: italic;
+    color: #888;
+  }
+  
+  .rating {
+    color: #FF6600;
+    font-size: 16px;
+  }
+  
+  .actions {
+    display: flex;
+    justify-content: center; /* Center the button horizontally */
+    align-items: center;
+    margin-top: 12px;
+  }
+  
+  .view-menu-button, .add-to-cart-button {
+    background-color: #FF6600;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+  }
+  
+  .view-menu-button:hover, .add-to-cart-button:hover {
+    background-color: #CC5500;
+  }
+  
+  .favourite-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: rgba(255, 255, 255, 0.9); /* Slightly more visible background */
+    border: none;
+    border-radius: 50%;
+    width: 48px;  
+    height: 48px; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    z-index: 2;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
+    transition: background 0.2s ease;
+}
+
+.favourite-button:hover {
+    background: rgba(255, 255, 255, 1);
+}
+
+.favourite-button .fav-icon {
+    font-size: 36px; 
+    color: #FF6600; 
+    transition: color 0.2s ease;
+}
+
+.favourite-button .fav-icon.active {
+    color: red; /* Red when favorited */
+}

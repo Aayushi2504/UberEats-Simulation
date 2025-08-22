@@ -1,0 +1,166 @@
+.navbar {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  width: 100%;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.mobile-menu-btn {
+  display: none; /* Hidden by default on desktop */
+  background: none;
+  border: none;
+  color: inherit;
+  font-size: 24px;
+  cursor: pointer;
+  padding: 5px;
+}
+
+.desktop-nav {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.dropdown-container {
+  position: relative;
+}
+
+.dropdown-menu {
+  position: absolute;
+  top: 100%;
+  right: 0;
+  background-color: white;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.dropdown-link {
+  text-decoration: none;
+  color: #333;
+  font-size: 14px;
+}
+
+.mobile-menu {
+  position: fixed;
+  top: 60px; 
+  left: 0;
+  width: 100%;
+  background: white;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  z-index: 999;
+  transform: translateY(-150%);
+  opacity: 0;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  padding: 20px;
+}
+
+.mobile-menu.open {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+.mobile-menu a, 
+.mobile-menu button {
+  color: #333;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 16px;
+  padding: 10px;
+  background: none;
+  border: none;
+  text-align: left;
+  width: 100%;
+}
+
+.mobile-menu button {
+  cursor: pointer;
+}
+
+.mobile-dropdown {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding-left: 20px;
+}
+
+@media (max-width: 768px) {
+  .mobile-menu-btn {
+    display: block;
+  }
+  
+  .desktop-nav {
+    display: none;
+  }
+}
+
+.navbar.home {
+  background-color: white;
+}
+
+.navbar:not(.home) {
+  background-color: #FF6600;
+}
+
+.navbar.home .logo,
+.navbar.home .nav-link,
+.navbar.home .logout-btn,
+.navbar.home .profile-btn {
+  color: #333;
+}
+
+.navbar:not(.home) .logo,
+.navbar:not(.home) .nav-link,
+.navbar:not(.home) .logout-btn,
+.navbar:not(.home) .profile-btn {
+  color: white;
+}
+
+.navbar.home .mobile-menu-btn {
+  color: #333;
+}
+
+.navbar:not(.home) .mobile-menu-btn {
+  color: white;
+}
+
+.nav-link, .logout-btn, .profile-btn {
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 16px;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+  text-decoration: none;
+  display: flex;
+  align-items: flex-end;
+  gap: 8px;
+}
+
+.subtext {
+  font-size: 14px;
+  margin-bottom: 4px;
+}
+
+.icon {
+  font-size: 18px;
+}

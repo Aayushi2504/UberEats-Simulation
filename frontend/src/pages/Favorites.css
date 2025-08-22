@@ -1,0 +1,112 @@
+/* Favorites Page Container */
+.favorites-page {
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  /* Page Heading */
+  .favorites-page h1 {
+    font-size: 32px;
+    color: #2E3333;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  /* Grid Layout for Favorite Cards */
+  .favorites-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+  }
+  
+  /* Individual Favorite Card */
+  .favorite-card {
+    width: 100%;
+    max-width: 300px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    background-color: white;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+  }
+  
+  .favorite-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Favorite Card Image */
+  .favorite-image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+  }
+  
+  /* Favorite Card Details */
+  .favorite-details {
+    padding: 16px;
+    text-align: left;
+  }
+  
+  .favorite-details h3 {
+    margin: 0;
+    font-size: 18px;
+    color: #2E3333;
+  }
+  
+  .favorite-details p {
+    margin: 8px 0;
+    font-size: 14px;
+    color: #666;
+  }
+  
+  /* Actions Container */
+  .actions {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 12px;
+  }
+  
+  /* View Menu Button */
+  .view-menu-button {
+    background-color: #FF6600;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+    flex: 1; /* Make both buttons take equal space */
+    margin-right: 8px; /* Add spacing between buttons */
+  }
+  
+  .view-menu-button:hover {
+    background-color: #CC5500;
+  }
+  
+  /* Remove Button */
+  .remove-button {
+    background-color: #ff4d4d;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+    flex: 1; /* Make both buttons take equal space */
+  }
+  
+  .remove-button:hover {
+    background-color: #cc0000;
+  }
+  
+  /* No Favorites Message */
+  .no-favorites {
+    text-align: center;
+    font-size: 18px;
+    color: #888;
+    margin-top: 20px;
+  }
