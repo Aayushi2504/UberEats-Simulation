@@ -1,112 +1,128 @@
-UberEATS Prototype
-This is a prototype of the UberEATS application built using ReactJS for the frontend, Node.js with Express.js for the backend, and MySQL as the database.
+# UberEats Simulation Project 🍔🚀
 
-Prerequisites
+A full-stack **food delivery prototype** inspired by UberEats, built as part of coursework at San José State University.
+This project demonstrates end-to-end development with **ReactJS, Node.js/Express, and MySQL**.
 
-Before running the application, ensure you have the following installed:
+---
 
-- Node.js: Download and install Node.js from [nodejs.org](https://nodejs.org/).
-- MySQL: Install MySQL from [mysql.com](https://www.mysql.com/).
-- Git: Install Git from [git-scm.com](https://git-scm.com/).
+## 🛠️ Tech Stack
+**Frontend:** React, Axios, Context API, CSS3  
+**Backend:** Node.js, Express.js, Express-Session, Bcrypt  
+**Database:** MySQL  
+**Tools:** Postman, Git
 
-Setup Instructions
+---
 
-1. Clone the Repository
+## ⚙️ System Architecture
+*(Note: Add your 'System_Architecture.png' image to a `/docs` folder)*
 
-First, clone the repository to your local machine:
+---
 
-bash:
-git clone http://github.com/Aayushi2504/DATA-236/new/main/Lab-1/UberEats
-cd Lab-1
-2. Set Up the Backend
-Navigate to the backend directory:
+## 🚀 Features
 
-bash:
-Copy
-cd backend
-Install the required dependencies:
+### 👤 Customer Features
+- User authentication (Signup/Login) with secure session management
+- Browse restaurants and menu items
+- Add items to cart and place orders
+- Manage favorites list
+- View order history and track order status
+- Update user profile and profile picture
 
-bash:
-Copy
-npm install
-Set up the MySQL database:
+### 🏪 Restaurant Features
+- Restaurant authentication and registration
+- Manage restaurant profile (details, hours, contact info)
+- Full CRUD operations for menu items (Create, Read, Update, Delete)
+- View and manage incoming orders
+- Update order status (New → Preparing → Delivered/Cancelled)
 
-Create a new database in MySQL.
+### ⚡ Backend Features
+- RESTful API design with proper HTTP status codes
+- Session-based authentication & authorization
+- Optimized database queries with indexing
+- Secure password handling with bcrypt
 
-Update the database configuration in config/db.config.js with your MySQL credentials.
+---
 
-Run the database migrations (if applicable):
+## 📸 Screenshots
+*(Note: Add your screenshots to a `/screenshots` folder)*
 
-bash:
-Copy
-npm run migrate
-Start the backend server:
+| Landing Page | Customer Home | Cart | Restaurant Dashboard |
+|--------------|---------------|------|----------------------|
+| ![Landing Page](screenshots/landing.png) | ![Customer Home](screenshots/customer_home.png) | ![Cart](screenshots/cart.png) | ![Restaurant Dashboard](screenshots/restaurant_dashboard.png) |
 
-bash:
-Copy
-npm start
-The backend server should now be running on http://localhost:5000 (or another port if configured).
+---
 
-3. Set Up the Frontend
-Navigate to the frontend directory:
+## 🚦 Getting Started
 
-bash:
-Copy
-cd ../frontend
-Install the required dependencies:
+### Prerequisites
+- Node.js (v14 or higher)
+- MySQL Server
+- npm or yarn
 
-bash:
-Copy
-npm install
-Start the frontend development server:
+### Installation
+1.  **Clone the repository**
+    ```bash
+    git clone https://github.com/Aayushi2504/UberEats-Simulation.git
+    cd UberEats-Simulation
+    ```
 
-bash:
-Copy
-npm start
-The frontend application should now be running on http://localhost:3000.
+2.  **Set up the database**
+    - Import the provided SQL schema into your MySQL server
 
-4. Access the Application
-Open your web browser and navigate to http://localhost:3000 to access the UberEATS prototype.
+3.  **Configure backend environment**
+    ```bash
+    cd backend
+    npm install
+    # Create a .env file with your database credentials
+    ```
 
-API Documentation
-The API documentation is available using Swagger UI. After starting the backend server, you can access the Swagger documentation at:
+4.  **Configure frontend environment**
+    ```bash
+    cd ../frontend
+    npm install
+    ```
 
-Copy
-http://localhost:5000/api-docs
-Alternatively, you can import the Postman collection provided in the docs folder to test the API endpoints.
+5.  **Run the application**
+    - Start the backend server: `npm start` from the `/backend` directory
+    - Start the frontend: `npm start` from the `/frontend` directory
 
-Project Structure
-backend/: Contains the Node.js and Express.js backend code.
+---
 
-frontend/: Contains the ReactJS frontend code.
+## 🔗 API Endpoints
 
-docs/: Contains API documentation (Swagger/Postman).
+| Method | Endpoint | Description |
+|--------|----------|-------------|
+| POST | `/api/customer/signup` | Customer registration |
+| POST | `/api/customer/login` | Customer login |
+| POST | `/api/restaurant/signup` | Restaurant registration |
+| GET | `/api/restaurants` | Get all restaurants |
+| GET | `/api/restaurants/:id/dishes` | Get dishes for a restaurant |
+| POST | `/api/orders` | Place a new order |
+| PUT | `/api/orders/:id/status` | Update order status |
 
-README.md: This file.
+> Full Postman collection available in `/postman` directory.
 
-Contributing
-If you wish to contribute to this project, please follow these steps:
+---
 
-Fork the repository.
+## 📈 Results & Learnings
+- Successfully implemented secure session-based authentication for multiple user types
+- Built a responsive frontend that works seamlessly across mobile and desktop devices
+- Optimized database performance through query indexing and efficient schema design
+- Gained experience in full-stack development and API design
 
-Create a new branch for your feature or bugfix.
+**Future Enhancements:**
+- Real-time order tracking with WebSockets
+- Integration with payment gateways (Stripe/PayPal)
+- Advanced search and filtering capabilities
+- Push notifications for order updates
 
-Commit your changes with detailed commit messages.
+---
 
-Push your branch and submit a pull request.
+## 👩‍💻 Author
+**Aayushi Shah**  
+[![GitHub](https://img.shields.io/badge/GitHub-Aayushi2504-blue?style=flat&logo=github)](https://github.com/Aayushi2504)
 
-Copy
+---
 
-Key Points to Customize:
-- Repository URL: http://github.com/Aayushi2504/DATA-236/new/main/Lab-1/UberEats
-- Database Configuration: Update the path to your database configuration file if it’s different from `config/db.config.js`.
-- Ports: If your backend or frontend runs on different ports, update the URLs accordingly.
-- API Documentation: If you’re using Postman instead of Swagger, update the instructions accordingly.
-
-
-Once you’ve customized the `README.md` file, you can commit it to your repository:
-
-bash:
-git add README.md
-git commit -m "Added README.md with setup instructions"
-git push origin main
+## ⚠️ Disclaimer
+This is an **academic prototype** developed for educational purposes as part of the DATA-236 Distributed Systems course at San José State University. It is not affiliated with or endorsed by Uber Technologies Inc.
